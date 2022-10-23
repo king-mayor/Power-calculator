@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Rating</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&family=Bree+Serif&family=Inter:wght@200;400;600;700;800&family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,400;0,500;0,800;1,100;1,200;1,700;1,800&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&family=Roboto:wght@100;300;500;700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+      <div class="wrapper">
+        <form action="">
+            <div class="container">
+             <div class="container-header">
+                 power calculator
+             </div>
+             <div class="container1">
+                 <div class="current">
+                     <label for="">current(I):</label>
+                 </div>
+                 <div class="current-input">
+                     <input type="text" placeholder="I" class="current-type">
+                 </div>
+             </div>
+             <div class="container2">
+                 <div class="voltage">
+                     <label for="">Voltage(V):</label>
+                 </div>
+                 <div class="voltage-input">
+                    <form>
+                        <select id="voltage-values">
+                            <option value="--select an option" class="voltage-1">--select an option</option>
+                            <option value="0.80">80%-Excellent</option>
+                            <option value="0.70">70%-Excellent</option>
+                            <option value="0.60">60%-Very Good</option>
+                            <option value="0.50">50%-Good</option>
+                            <option value="0.40">40%-pass</option>
+                            <option value="0.30">30%-Fail</option>
+                        </select>
+                    </form>
+                 </div>
+             </div>
+             <div class="error">
+                 Please fill in the Current(I) & Voltage(V)!
+             </div>
+             <div class="btn">
+                <button id="btn-one">calculate</button>
+             </div>
+             <div class="results">
+                <div class="power-rating">
+                    <p class="power-rat">Power Rating(W): 0(W)</p>
+                </div>
+                <div class="power-time">
+                    <p class="power-gross">Gross Power Rating: 0(W)</p>
+                </div>
+            </div>
+            </div>
+         </form>
+      </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
